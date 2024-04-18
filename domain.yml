@@ -46,8 +46,8 @@ entities:
 actions:
 - utter_greet
 - utter_akero_req
--utter_tactic_req
--utter_campaign_req
+- utter_tactic_req
+- utter_campaign_req
 - utter_affirm
 - __main__.ApiAction
 
