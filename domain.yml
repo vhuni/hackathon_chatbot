@@ -58,7 +58,7 @@ templates:
   utter_akero_req:
   -text: "The student advertising and conversion platform,powered by AI, supported by Higher Education experts."
   utter_akero_req:
-  -text: " Akero was created.."
+  -text: "Akero was created.."
 
 
   utter_tactic_req:
