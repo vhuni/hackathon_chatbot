@@ -1,0 +1,40 @@
+nlu_md = """  
+## intent:greet
+- hey
+- hello there
+- hi
+- hello
+- good morning
+- good evening
+- hey there
+- let's go
+- hey dude
+- goodmorning
+- goodevening
+- good afternoon
+
+## intent:affirm
+- great
+- OK
+- okay
+- thank you
+- thanks
+- yes, thanks
+- cheers
+- thanks a lot
+- thank you very much
+
+
+## intent: inquiry
+- What is akero ?
+- Is akero a marketing application
+- Is akero created by NetNatives 
+- What are campaigns?
+- Could you explain what campaigns are?
+- What are briefs?
+- Who creates briefs?
+- what are tactics ?
+
+
+
+""" 
