@@ -1,71 +1,89 @@
 intents:
-- greet
-- akero_inquiry 
-- campaign_inquiry
-- tactic_inquiry
-- affirm
+  - greet
+  - akero_inquiry
+  - campaign_inquiry
+  - tactic_inquiry
+  - affirm
 
-slots:
-  Akero:
-    type: categorical
-    values:
-        - akero
-        - marketing 
-        - company  
-        - website 
-        - net natives 
-        - product 
-        - application
-  Campaign:
-    type: categorical
-    values:
-        - campaign
-        - client 
-        - campaign strategist
-        - advertising
-        - brand promotion
-        - initiative
-        - promotion
-  Tactic:
-    type: categorical
-    values:
-        - media marketing
-        - content 
-        - ads 
-        - paid media
-        - assets 
+# slots:
+#   Akero:
+#     type: text
+#     mappings:
+#     - type: from_text
+#       intent: akero_inquiry
 
-  
-  
-entities:
-- Akero
-- Campaign
-- Tactics
+#   # Akero:
+#   #   type: unfeaturized
+#     # values:
+#     #     - akero
+#     #     - marketing
+#     #     - company
+#     #     - website
+#     #     - net natives
+#     #     - product
+#     #     - application
+
+#   Campaign:
+#     type: text
+#     mappings:
+#     - type: from_text
+#       intent: campaign_inquiry
+#   # Campaign:
+#   #   type: unfeaturized
+#     # values:
+#     #     - campaign
+#     #     - client
+#     #     - campaign strategist
+#     #     - advertising
+#     #     - brand promotion
+#     #     - initiative
+#     #     - promotion
+#   Tactic:
+#     type: text
+#     mappings:
+#     - type: from_text
+#       intent: tactic_inquiry
+#   # Tactic:
+#   #   type: unfeaturized
+#     # values:
+#     #     - media marketing
+#     #     - content
+#     #     - ads
+#     #     - paid media
+#     #     - assets
+
+
+# entities:
+#   - Akero
+#   - Campaign
+#   - Tactic
 
 
 actions:
-- utter_greet
-- utter_akero_req
-- utter_tactic_req
-- utter_campaign_req
-- utter_affirm
-- __main__.ApiAction
+  - utter_greet
+  - utter_akero_req
+  - utter_tactic_req
+  - utter_campaign_req
+  - utter_affirm
+  - __main__.ApiAction
 
-templates:
-
+responses:
   utter_greet:
-  -text: "Hi how you doing"
+  - text: "Hi how you doing"
   utter_akero_req:
-  -text: "The student advertising and conversion platform,powered by AI, supported by Higher Education experts."
-  utter_akero_req:
-  -text: "Akero was created.."
-
+  - text: "The student advertising and conversion platform powered by AI supported by Higher Education experts."
+  # utter_akero_req:
+  # - text: "Akero was created.."
 
   utter_tactic_req:
-  -text: "Hello world this is a tactic"
+  - text: "Hello world this is a tactic"
 
   utter_campaign_req:
-  -text: "Hello world this  is a campaign"
-  
-  utter_affire:
-  -text: "Welcome"
+  - text: "Hello world this is a campaign"
+
+  utter_affirm:
+  - text: "Welcome"
+
+session_config:
+  session_expiration_time: 60  # value in minutes
+  carry_over_slots_to_new_session: true
