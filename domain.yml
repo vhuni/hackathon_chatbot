@@ -54,18 +54,18 @@ actions:
 templates:
 
   utter_greet:
-  "Hi how you doing"
+  -text: "Hi how you doing"
   utter_akero_req:
-  -text:"The student advertising and conversion platform,powered by AI, supported by Higher Education experts."
+  -text: "The student advertising and conversion platform,powered by AI, supported by Higher Education experts."
   utter_akero_req:
-  -text:" Akero was created.."
+  -text: " Akero was created.."
 
 
   utter_tactic_req:
-  -text:"Hello world this is a tactic"
+  -text: "Hello world this is a tactic"
 
   utter_campaign_req:
-  -text:"Hello world this  is a campaign"
+  -text: "Hello world this  is a campaign"
   
   utter_affire:
-  -text:"Welcome"
+  -text: "Welcome"
