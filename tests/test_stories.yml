@@ -2,30 +2,30 @@
 #### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
 
 stories:
-- story: happy path 1
+- story: akero_inq_1
   steps:
   - user: |
       hello there!
     intent: greet
   - action: utter_greet
   - user: |
-      amazing
-    intent: mood_great
-  - action: utter_greet
+      What is akero ?
+    intent: akero_inquiry
+  - action: utter_akero_req
 
-- story: happy path 2
+- story: campaign_inq_1
   steps:
   - user: |
       hello there!
     intent: greet
   - action: utter_greet
   - user: |
-      amazing
-    intent: mood_great
-  - action: utter_greet
+      What are campaigns?
+    intent: campaign_inquiry
+  - action: utter_campaign_req
   - user: |
-      bye-bye!
-    intent: goodbye
+      thank you
+    intent: affirm
   - action: utter_affirm
 
 
