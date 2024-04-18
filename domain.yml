@@ -1,0 +1,71 @@
+intents:
+- greet
+- akero_inquiry 
+- campaign_inquiry
+- tactic_inquiry
+- affirm
+
+slots:
+  Akero:
+    type: categorical
+    values:
+        - akero
+        - marketing 
+        - company  
+        - website 
+        - net natives 
+        - product 
+        - application
+  Campaign:
+    type: categorical
+    values:
+        - campaign
+        - client 
+        - campaign strategist
+        - advertising
+        - brand promotion
+        - initiative
+        - promotion
+  Tactic:
+    type: categorical
+    values:
+        - media marketing
+        - content 
+        - ads 
+        - paid media
+        - assets 
+
+  
+  
+entities:
+- Akero
+- Campaign
+- Tactics
+
+
+actions:
+- utter_greet
+- utter_akero_req
+-utter_tactic_req
+-utter_campaign_req
+- utter_affirm
+- __main__.ApiAction
+
+templates:
+
+  utter_greet:
+  "Hi how you doing"
+  utter_akero_req:
+  -text:"The student advertising and conversion platform,powered by AI, supported by Higher Education experts."
+  utter_akero_req:
+  -text:" Akero was created.."
+
+
+  utter_tactic_req:
+  -text:"Hello world this is a tactic"
+
+  utter_campaign_req:
+  -text:"Hello world this  is a campaign"
+  
+  utter_affire:
+  -text:"Welcome"
