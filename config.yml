@@ -4,6 +4,8 @@ language: en
 
 pipeline:
 # will be selected by the Suggested Config feature
+- name: FallbackClassifier
+  threshold: 0.3
 
 policies:
 - name: MemoizationPolicy
