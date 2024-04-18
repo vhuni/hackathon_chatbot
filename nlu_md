@@ -1,4 +1,4 @@
-nlu_md = """  
+nlu_md = """
 ## intent:greet
 - hey
 - hello there
@@ -25,16 +25,18 @@ nlu_md = """
 - thank you very much
 
 
-## intent: inquiry
+## intent: akero_inquiry
 - What is akero ?
 - Is akero a marketing application
 - Is akero created by NetNatives 
+
+## intent: campaign_inquiry
 - What are campaigns?
 - Could you explain what campaigns are?
-- What are briefs?
-- Who creates briefs?
-- what are tactics ?
 
+##intent: campaign_tactic
+- Who creates tactics?
+- what are tactics ?
 
 
 """ 
